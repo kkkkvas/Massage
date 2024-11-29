@@ -1,0 +1,28 @@
+﻿<Page x:Class="WpfApp5666.Services"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp5666"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Services">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="https://avatars.mds.yandex.net/get-mpic/4343059/2a0000018c5ce33874c401126d64b7a0145a/orig"/>
+        </Grid.Background>
+        <TextBox HorizontalAlignment="Left" Height="126" Margin="23,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="592"  Text="Massagik&#xA; " Background="{x:Null}" FontSize="100" FontFamily="Arial Black" BorderBrush="{x:Null}">
+            <TextBox.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFA43434" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.Foreground>
+        </TextBox>
+        <Button Content="Список клиентуры" x:Name="ClientsButton" HorizontalAlignment="Left" Margin="23,0,0,243" Width="196" Background="#FFA95846" BorderBrush="#FF050216" Foreground="#FF1C1C1D" FontSize="16" FontFamily="Arial Black" BorderThickness="5,1,5,1" Height="66" VerticalAlignment="Bottom" Click="ClientsButton_Click_1"/>
+        <Button Content="Сотрудники" x:Name="StaffButton" Margin="23,0,0,172" Background="#FFA95846" BorderBrush="#FF050216" Foreground="#FF1C1C1D" FontSize="16" FontFamily="Arial Black" BorderThickness="5,1,5,1" HorizontalAlignment="Left" Width="196" Height="66" VerticalAlignment="Bottom"/>
+        <Button Content="Услуги" x:Name="ServiceButton" HorizontalAlignment="Left" Margin="23,0,0,101" Width="196" Background="#FFA6776D" BorderBrush="#FF050216" Foreground="#FF1C1C1D" FontSize="16" FontFamily="Arial Black" BorderThickness="5,1,5,1" Height="66" VerticalAlignment="Bottom"/>
+        <Button Content="Брони" x:Name="OrdersButton" Margin="23,0,0,30" Background="#FFA95846" BorderBrush="#FF050216" Foreground="#FF1C1C1D" FontSize="16" FontFamily="Arial Black" BorderThickness="5,1,5,1" Height="66" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="196" Click="OrdersButton_Click"/>
+    </Grid>
+</Page>
